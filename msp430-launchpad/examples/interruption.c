@@ -27,5 +27,6 @@ int main(void)
 #pragma vector = PORT1_VECTOR
 __interrupt void Port_1(void){
     P1OUT ^= RED; // Troca o estado do led
+    __delay_cycles(120000);
     P1IFG = SWITCH_PRESSED; // Zera a flag
 }
