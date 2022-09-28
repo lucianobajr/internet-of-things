@@ -36,8 +36,9 @@ __interrupt void Port_1(void)
 
     if (count % 5 == 0)
     {
-        P1OUT ^= GREEN | RED;   // Troca o estado do led
-        
+        P1OUT ^= GREEN | RED; // Troca o estado do led
+        __delay_cycles(120000);
     }
-    P1IFG = SWITCH_PRESSED; // Zera a flag
+
+    // P1IFG = SWITCH_PRESSED; // Zera a flag
 }
