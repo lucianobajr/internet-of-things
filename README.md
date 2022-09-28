@@ -5,7 +5,7 @@
  - Prática (1): Troca de leds por E/S => versão diferente de implementação (../examples/switch_leds.c)
  - Prática (2): E/S por interrupção
  - Prática (3): Semáforo usando temporizador
- - Prática (4): 
+ - Prática (4): Conversor Analógico Digital
 
 ### Instalação  MSP430 
 
