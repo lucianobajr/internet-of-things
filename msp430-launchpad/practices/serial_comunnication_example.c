@@ -1,20 +1,17 @@
 #include <msp430g2553.h>
 #include <inttypes.h>
 
-#define RED BIT0
-#define GREEN BIT6
-#define SWITCH BIT3
-
 void UARTSendArray(unsigned char *TxArray, unsigned char ArrayLength);
 
-uint8_t dado_rx; // define a variavel que recebe os dados da serial
+uint8_t data;
 
-int main(void)
+void main(void)
+
 {
     WDTCTL = WDTPW + WDTHOLD; // Stop WDT
 
-    P1DIR |= RED + GREEN; // Set the LEDs on P1.0, P1.6 as outputs
-    P1OUT = SWITCH;         // Set P1.0
+    P1DIR |= BIT0 + BIT6; // Set the LEDs on P1.0, P1.6 as outputs
+    P1OUT = BIT0;         // Set P1.0
 
     BCSCTL1 = CALBC1_1MHZ; // Set DCO to 1MHz
     DCOCTL = CALDCO_1MHZ;  // Set DCO to 1MHz
@@ -32,19 +29,44 @@ int main(void)
     __bis_SR_register(LPM0_bits + GIE); // Enter LPM0, interrupts enabled
 }
 
-// recebe um caracter pela interface serial. Guarda este valor na variavel 'dado_rx'
-// Quando um caracter chega pela interface serial, gera uma interrupcao e armazena na variavel dado_rx
+// Echo back RXed character, confirm TX buffer is ready first
 #pragma vector = USCIAB0RX_VECTOR
-__interrupt void USCI0RX_ISR()
+__interrupt void USCI0RX_ISR(void)
 {
-    dado_rx = UCA0RXBUF;
+    data = UCA0RXBUF;
     UARTSendArray("Received command: ", 18);
-    UARTSendArray(&dado_rx, 1);
+    UARTSendArray(&data, 1);
     UARTSendArray("\n\r", 2);
 
-    if (UCA0RXBUF == 'l')
+    switch (data)
     {
-        P1OUT ^= GREEN;
+    case 'R':
+    {
+        P1OUT |= BIT0;
+    }
+    break;
+    case 'r':
+    {
+        P1OUT &= ~BIT0;
+    }
+    break;
+    case 'G':
+    {
+        P1OUT |= BIT6;
+    }
+    break;
+    case 'g':
+    {
+        P1OUT &= ~BIT6;
+    }
+    break;
+    default:
+    {
+        UARTSendArray("Unknown Command: ", 17);
+        UARTSendArray(&data, 1);
+        UARTSendArray("\n\r", 2);
+    }
+    break;
     }
 }
 
@@ -57,8 +79,7 @@ void UARTSendArray(unsigned char *TxArray, unsigned char ArrayLength)
 
     while (ArrayLength--)
     { // Loop until StringLength == 0 and post decrement
-        while (!(IFG2 & UCA0TXIFG))
-            ;                 // Wait for TX buffer to be ready for new data
+        while (!(IFG2 & UCA0TXIFG));                 // Wait for TX buffer to be ready for new data
         UCA0TXBUF = *TxArray; // Write the character at the location specified py the pointer
         TxArray++;            // Increment the TxString pointer to point to the next character
     }
