@@ -14,6 +14,7 @@
 ### Para compilar
 
     $ msp430-gcc -Os -mmcu=msp430g2231 blink.c -o blink.elf
+    $ msp430-gcc -Os -mmcu=msp430g2553 test.c -o test.elf
 
 ### Agora conecte a Launchpad na USB da sua máquina
     $ dmesg
