@@ -2,14 +2,25 @@
 
 ## MSP430
 
+
+<h1 align="center">
+    <img alt="" src="https://user-images.githubusercontent.com/45442173/194088522-1364414a-a809-491f-8373-f24a1297006c.png" width="300px"/>
+</h1>
+
+
  - Prática (1): Troca de leds por E/S => versão diferente de implementação (../examples/switch_leds.c)
  - Prática (2): E/S por interrupção
  - Prática (3): Semáforo usando temporizador
  - Prática (4): Conversor Analógico Digital
+ - Prática (5): Comunicação Serial com Teclado ([art-communication](https://www.xanthium.in/Serial-Communication-MSP430-UART-USCI_A))
 
-### Instalação  MSP430 
+### Instalação Compilador MSP430 
 
     $ sudo apt-get install msp430-libc mspdebug msp430mcu binutils-msp430 gcc-msp430 gdb-msp430
+
+### Instalação Putty
+
+    $ sudo apt-get install putty
 
 ### Para compilar
 
