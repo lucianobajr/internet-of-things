@@ -63,7 +63,7 @@ O kit é composto por uma poderosa placa equipada com um microcontrolador e uma 
 
 ### Especificações Técnicas
 
-1 placa Arduino Nano 33 BLE Sense
-1 câmera OV7675
-1 Arduino Tiny Machine Learning Shield
-1 cabo USB A para Micro USB
+- 1 placa Arduino Nano 33 BLE Sense
+- 1 câmera OV7675
+- 1 Arduino Tiny Machine Learning Shield
+- 1 cabo USB A para Micro USB
