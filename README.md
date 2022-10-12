@@ -67,3 +67,11 @@ O kit é composto por uma poderosa placa equipada com um microcontrolador e uma 
 - 1 câmera OV7675
 - 1 Arduino Tiny Machine Learning Shield
 - 1 cabo USB A para Micro USB
+
+### Arduino nano 33 BLE
+
+- Sensor de Gestos e de Cor `APDS-9960`
+- Sensor de umidade e temperatura digital capacitivo `HTS221`
+- O `LPS22HB` é um sensor de pressão absoluta piezoresistivo ultracompacto que funciona como um barômetro de saída digital
+- Permite que você leia os valores do acelerômetro, magnetômetro e giroscópio da IMU `LSM9DS1` em seu Arduino Nano 33 BLE Sense.
+- Uso de microfones `PDM` para o Arduino Zero / Adafruit Feather M0 (processador SAMD21).
