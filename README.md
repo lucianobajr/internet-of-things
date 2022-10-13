@@ -70,6 +70,10 @@ O kit é composto por uma poderosa placa equipada com um microcontrolador e uma 
 
 ### Arduino nano 33 BLE
 
+<img alt="" src="https://user-images.githubusercontent.com/45442173/195472137-9d2fb6ea-36ed-48ea-a135-b8159e312878.png" width="400px"/>
+
+
+
 - Sensor de Gestos e de Cor `APDS-9960`
 - Sensor de umidade e temperatura digital capacitivo `HTS221`
 - O `LPS22HB` é um sensor de pressão absoluta piezoresistivo ultracompacto que funciona como um barômetro de saída digital
