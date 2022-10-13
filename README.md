@@ -70,7 +70,11 @@ O kit é composto por uma poderosa placa equipada com um microcontrolador e uma 
 
 ### Arduino nano 33 BLE
 
-<img alt="" src="https://user-images.githubusercontent.com/45442173/195472137-9d2fb6ea-36ed-48ea-a135-b8159e312878.png" width="400px"/>
+<h1 align="center">
+    <img alt="" src="https://user-images.githubusercontent.com/45442173/195472473-20f7be5f-7b75-4ee1-b20e-9d8cc6b80b77.jpg" width="600px"/>
+</h1>
+
+
 
 
 
