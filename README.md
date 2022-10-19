@@ -67,3 +67,7 @@ O kit é composto por uma poderosa placa equipada com um microcontrolador e uma 
 - 1 câmera OV7675
 - 1 Arduino Tiny Machine Learning Shield
 - 1 cabo USB A para Micro USB
+
+### Instalaçao
+
+- [IDE Arduino](https://www.arduino.cc/en/software)
