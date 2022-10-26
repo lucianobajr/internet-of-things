@@ -62,7 +62,6 @@ void loop() {
     Serial.println();
 
     greetingCharacteristic.writeValue("Temp =" + String(temp) + "C");
-
         // Setting BLE Service Advertisment
     BLE.setAdvertisedService(greetingService);
     
