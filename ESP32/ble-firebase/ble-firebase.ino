@@ -109,14 +109,14 @@ void receive(BLEDevice peripheral) {
   }
 
   while (peripheral.connected()) {
-    if(timeCharacteristic.valueUpdated() and millis() - timer >= 3000) {
+    //if(timeCharacteristic.valueUpdated() and millis() - timer >= 3000) {
       Serial.print("Time: ");
       String v = (char*)timeCharacteristic.value();
       Serial.println(v);
 
       Firebase.pushString("/tempo/milissegundos", v);
       timer = millis();
-    }
+    //}
   }
 
   Serial.println("Peripheral disconnected");
