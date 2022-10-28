@@ -74,12 +74,13 @@ O kit é composto por uma poderosa placa equipada com um microcontrolador e uma 
     <img alt="" src="https://user-images.githubusercontent.com/45442173/195472473-20f7be5f-7b75-4ee1-b20e-9d8cc6b80b77.jpg" width="600px"/>
 </h1>
 
-
-
-
-
 - Sensor de Gestos e de Cor `APDS-9960`
 - Sensor de umidade e temperatura digital capacitivo `HTS221`
 - O `LPS22HB` é um sensor de pressão absoluta piezoresistivo ultracompacto que funciona como um barômetro de saída digital
 - Permite que você leia os valores do acelerômetro, magnetômetro e giroscópio da IMU `LSM9DS1` em seu Arduino Nano 33 BLE Sense.
 - Uso de microfones `PDM` para o Arduino Zero / Adafruit Feather M0 (processador SAMD21).
+
+
+## ESP32
+
+- [AZURE IOT](https://internet-of-things.azureiotcentral.com/devices)
