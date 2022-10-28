@@ -3,8 +3,8 @@
 #include <IOXhop_FirebaseESP32.h>                           
 #include <ArduinoJson.h>                   
 
-#define WIFI_SSID "WIFI"                   
-#define WIFI_PASSWORD "dener123456"         
+#define WIFI_SSID "MAXXFIBRA MARCILENE 2.4G"                   
+#define WIFI_PASSWORD "catetoopostosobrehipotenusa"         
 #define FIREBASE_HOST "https://iot-firebase-dc830-default-rtdb.firebaseio.com/"    
 #define FIREBASE_AUTH "9oLATetP7cj2swabTrxFXB37oluPej3dM5rl8cE1"   
 
