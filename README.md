@@ -83,4 +83,25 @@ O kit é composto por uma poderosa placa equipada com um microcontrolador e uma 
 
 ## ESP32
 
+<h1 align="center">
+    <img alt="" src="https://user-images.githubusercontent.com/45442173/198732038-286f2921-095b-4623-8aa9-b3fcf0b3ab4b.png" width="400px"/>
+</h1>
+
+O ESP32 é um pequeno microcontrolador desenvolvido com a capacidade de proporcionar comunicação sem fio através do Wifi e através do próprio sistema Bluetooth. Ele pode funcionar como um sistema autônomo completo ou como um dispositivo escravo para um MCU host, reduzindo a sobrecarga da pilha de comunicação no processador principal do aplicativo. O ESP32 pode interagir com outros sistemas para fornecer funcionalidade Wi-Fi e Bluetooth por meio de suas interfaces SPI/SDIO ou I2C/UART.
+
+
+### Firebase
+
+- [Configuração do ESP32 na Arduino IDE e comunicação com Firebase](https://www.youtube.com/watch?v=_ADdFH2K7SI&t=1393s&ab_channel=ma%CF%80eo)
+
+### Azure IOT
+
 - [AZURE IOT](https://internet-of-things.azureiotcentral.com/devices)
+
+
+### AWS IOT
+
+- [Configuração Projeto](https://how2electronics.com/connecting-esp32-to-amazon-aws-iot-core-using-mqtt/)
+- [Conectar ESP32 com AWS IOT](https://capsistema.com.br/index.php/2021/02/08/conecte-o-esp32-ao-aws-iot-com-codigo-arduino/)
+- [AWS IOT MQTT com ReactJS](https://www.serverlessguru.com/blog/part-one-serverless-real-time-reactjs-app-aws-iot-mqtt)
+- [AWS IOT MQTT com React Native](https://roger-espinoza-996.medium.com/connection-mqtt-react-native-aws-iot-core-ac569eb606aa)
