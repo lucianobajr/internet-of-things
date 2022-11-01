@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "103108299472",
+    "firebase_url": "https://iot-firebase-dc830-default-rtdb.firebaseio.com",
+    "project_id": "iot-firebase-dc830",
+    "storage_bucket": "iot-firebase-dc830.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:103108299472:android:f60d98583e271bcfff6cd5",
+        "android_client_info": {
+          "package_name": "com.mobile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "103108299472-ksgvg7lvbsjv3cbum073m4a5emt02mhr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxSG-2ptmEvm2gZueUFIq_DaKUR7ntHuA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "103108299472-ksgvg7lvbsjv3cbum073m4a5emt02mhr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
