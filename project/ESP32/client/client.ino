@@ -1,6 +1,14 @@
 #include <ArduinoBLE.h>
+#include <WiFi.h>
+#include <IOXhop_FirebaseESP32.h>
+#include <ArduinoJson.h>
 
 #define UUID "180C"
+
+#define WIFI_SSID "MAXXFIBRA MARCILENE 2.4G"
+#define WIFI_PASSWORD "catetoopostosobrehipotenusa"
+#define FIREBASE_HOST "https://iot-firebase-dc830-default-rtdb.firebaseio.com/"
+#define FIREBASE_AUTH "9oLATetP7cj2swabTrxFXB37oluPej3dM5rl8cE1"
 
 String motion;
 
@@ -17,6 +25,20 @@ void setup()
 
   // start scanning for peripherals
   BLE.scanForUuid(UUID);
+
+  WiFi.begin(WIFI_SSID, WIFI_PASSWORD);
+
+  Serial.print("Conectando ao wifi");
+
+  while (WiFi.status() != WL_CONNECTED)
+  {
+    Serial.print(".");
+    delay(300);
+  }
+
+  Serial.println("WIFI Conectado!!");
+
+  Firebase.begin(FIREBASE_HOST, FIREBASE_AUTH);
 }
 
 void loop()
@@ -111,29 +133,31 @@ void receive(BLEDevice peripheral)
       response = (char *)timeCharacteristic.value();
       set_motion(response[0] - '0');
       Serial.println(motion);
+      Firebase.setString("/motion", motion);
     }
   }
 
   Serial.println("Peripheral disconnected");
 }
 
-void set_motion(int option){
+void set_motion(int option)
+{
   switch (option)
-    {
-    case 0:
-        motion = "IDLE";
-        break;
+  {
+  case 0:
+    motion = "IDLE";
+    break;
 
-    case 1:
-        motion = "LIFT";
-        break;
+  case 1:
+    motion = "LIFT";
+    break;
 
-    case 2:
-        motion = "MARITIME";
-        break;
+  case 2:
+    motion = "MARITIME";
+    break;
 
-    case 3:
-        motion = "TERRESTRIAL";
-        break;
-    }
+  case 3:
+    motion = "TERRESTRIAL";
+    break;
+  }
 }
