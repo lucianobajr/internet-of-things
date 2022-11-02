@@ -9,7 +9,9 @@
     "web": "expo start --web",
     "start": "react-native start",
     "start:device": "yarn android --deviceId=727ee60",
-    "test": "jest"
+    "test": "jest",
+    "build:android":"eas build --platform android",
+    "build:android-preview":"eas build -p android --profile preview"
   },
   "dependencies": {
     "@expo-google-fonts/roboto-slab": "^0.2.2",
