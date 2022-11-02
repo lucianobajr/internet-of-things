@@ -1,0 +1,24 @@
+{
+  "containers": [
+    {
+      "id": "01",
+      "company": "SEDEX",
+      "code": "b8b1ef71-44e3-4f21"
+    },
+    {
+      "id": "02",
+      "company": "SEDEX",
+      "code": "b8b1ef71-44e3-4f21"
+    },
+    {
+      "id": "03",
+      "company": "SEDEX",
+      "code": "b8b1ef71-44e3-4f21"
+    },
+    {
+      "id": "04",
+      "company": "SEDEX",
+      "code": "b8b1ef71-44e3-4f21"
+    }
+  ]
+}

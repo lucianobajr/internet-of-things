@@ -1,36 +1,45 @@
-import React, { useState, useEffect } from "react";
-import { firebase } from "@react-native-firebase/database";
+import React from "react";
+import { NavigationContainer } from "@react-navigation/native";
 
-import { StyleSheet, Text, View } from "react-native";
+import {
+  useFonts,
+  RobotoSlab_100Thin,
+  RobotoSlab_200ExtraLight,
+  RobotoSlab_300Light,
+  RobotoSlab_400Regular,
+  RobotoSlab_500Medium,
+  RobotoSlab_700Bold,
+  RobotoSlab_900Black
+} from "@expo-google-fonts/roboto-slab";
+import { ThemeProvider } from "styled-components";
 
-const reference = firebase.app().database().ref("/motion");
+import theme from "./src/theme";
+import Routes from "./src/routes";
+
+import * as SplashScreen from "expo-splash-screen";
+
+SplashScreen.preventAutoHideAsync();
 
 export default function App() {
-  const [motion, setMotion] = useState("");
+  const [fontsLoaded] = useFonts({
+    RobotoSlab_100Thin,
+    RobotoSlab_200ExtraLight,
+    RobotoSlab_300Light,
+    RobotoSlab_400Regular,
+    RobotoSlab_500Medium,
+    RobotoSlab_700Bold,
+    RobotoSlab_900Black
+  });
 
-  useEffect(() => {
-    reference.on("value", (room) => {
-      const data = room.val();
-      setMotion(data);
-    });
-
-    return () => {
-      reference.off("value");
-    };
-  }, []);
+  if (fontsLoaded) {
+    SplashScreen.hideAsync();
+  }
 
   return (
-    <View style={styles.container}>
-      <Text>Motion: {motion}</Text>
-    </View>
+    <ThemeProvider theme={theme}>
+      <NavigationContainer>
+        <Routes />
+      </NavigationContainer>
+    </ThemeProvider>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-});
