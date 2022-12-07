@@ -90,16 +90,16 @@ O kit é composto por uma poderosa placa equipada com um microcontrolador e uma 
 O ESP32 é um pequeno microcontrolador desenvolvido com a capacidade de proporcionar comunicação sem fio através do Wifi e através do próprio sistema Bluetooth. Ele pode funcionar como um sistema autônomo completo ou como um dispositivo escravo para um MCU host, reduzindo a sobrecarga da pilha de comunicação no processador principal do aplicativo. O ESP32 pode interagir com outros sistemas para fornecer funcionalidade Wi-Fi e Bluetooth por meio de suas interfaces SPI/SDIO ou I2C/UART.
 
 
-### Firebase
+### Firebase - ESP32
 
 - [Configuração do ESP32 na Arduino IDE e comunicação com Firebase](https://www.youtube.com/watch?v=_ADdFH2K7SI&t=1393s&ab_channel=ma%CF%80eo)
 
-### Azure IOT
+### Firebase - ESP32
 
 - [AZURE IOT](https://internet-of-things.azureiotcentral.com/devices)
 
 
-### AWS IOT
+### AWS IOT - ESP32
 
 - [Configuração Projeto](https://how2electronics.com/connecting-esp32-to-amazon-aws-iot-core-using-mqtt/)
 - [Conectar ESP32 com AWS IOT](https://capsistema.com.br/index.php/2021/02/08/conecte-o-esp32-ao-aws-iot-com-codigo-arduino/)
