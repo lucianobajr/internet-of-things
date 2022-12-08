@@ -1,8 +1,13 @@
 # IOT (internet of things)
 
-- [MSP430](#msp430)
-- [Arduino Tiny Machine Learning Kit](#arduino-tiny-machine-learning-kit)
-- [ESP32](#esp32)
+- [Microcontroloadores](#microcontroladores)
+    - [MSP430](#msp430)
+    - [Arduino Tiny Machine Learning Kit](#arduino-tiny-machine-learning-kit)
+    - [ESP32](#esp32)
+- [Práticas](#práticas)
+    - [Práticas MSP](#práticas-msp)
+    - [Práticas ESP](#práticas-esp)
+    - [Práticas Arduino](#práticas-arduino)
 
 ## MSP430
 
@@ -21,14 +26,6 @@ Os MSP430 são microcontroladores RISC de 16 bits voltados para aplicações de 
 - 2 Timers de 16 bits
 - Módulos ADC e comparadores
 - UART, SPI, I2C
-
-### Práticas
-
- - Prática (1): Troca de leds por E/S => versão diferente de implementação (../examples/switch_leds.c)
- - Prática (2): E/S por interrupção
- - Prática (3): Semáforo usando temporizador
- - Prática (4): Conversor Analógico Digital
- - Prática (5): Comunicação Serial com Teclado ([art-communication](https://www.xanthium.in/Serial-Communication-MSP430-UART-USCI_A))
 
 ### Instalação Compilador MSP430 
 
@@ -110,3 +107,39 @@ O ESP32 é um pequeno microcontrolador desenvolvido com a capacidade de proporci
 - [Conectar ESP32 com AWS IOT](https://capsistema.com.br/index.php/2021/02/08/conecte-o-esp32-ao-aws-iot-com-codigo-arduino/)
 - [AWS IOT MQTT com ReactJS](https://www.serverlessguru.com/blog/part-one-serverless-real-time-reactjs-app-aws-iot-mqtt)
 - [AWS IOT MQTT com React Native](https://roger-espinoza-996.medium.com/connection-mqtt-react-native-aws-iot-core-ac569eb606aa)
+
+## Práticas MSP
+
+- [Prática (1): Troca de leds por E/S => versão diferente de implementação (../examples/switch_leds.c)](https://github.com/lucianobajr/internet-of-things/blob/main/msp430-launchpad/practices/first.c)
+- [Prática (2): E/S por interrupção](https://github.com/lucianobajr/internet-of-things/blob/main/msp430-launchpad/practices/second.c)
+- [Prática (3): Semáforo usando temporizador](https://github.com/lucianobajr/internet-of-things/blob/main/msp430-launchpad/practices/third.c)
+- [Prática (4): Conversor Analógico Digital](https://github.com/lucianobajr/internet-of-things/blob/main/msp430-launchpad/practices/fourth.c)
+- [Prática (5): Comunicação Serial com Teclado](https://github.com/lucianobajr/internet-of-things/blob/main/msp430-launchpad/practices/serial_comunnication.c) ([art-communication](https://www.xanthium.in/Serial-Communication-MSP430-UART-USCI_A))
+
+## Práticas ESP
+
+- BLE
+    - [Periférico](https://github.com/lucianobajr/internet-of-things/tree/main/tiny-machine-learning/ble-examples/ble-peripheral)
+    - [Envio de dados](https://github.com/lucianobajr/internet-of-things/tree/main/tiny-machine-learning/ble-examples/ble-send-data)
+    - [Com uso de sensores](https://github.com/lucianobajr/internet-of-things/tree/main/tiny-machine-learning/ble-examples/ble-sensor-environment)
+- Machine Learning
+    - [Detecção de movimento de container](https://github.com/lucianobajr/internet-of-things/tree/main/tiny-machine-learning/machine-learning/motion-detection)
+    - [Detecção de pessoas](https://github.com/lucianobajr/internet-of-things/tree/main/tiny-machine-learning/machine-learning/person-detection)
+    - [Detecção de `Yes` ou `No`](https://github.com/lucianobajr/internet-of-things/tree/main/tiny-machine-learning/machine-learning/yes-no-speech-detection)
+- Sensores
+    - [Gestos e de Cor (`APS-9960`)](https://github.com/lucianobajr/internet-of-things/tree/main/tiny-machine-learning/sensors/APS-9960-FULL-EXAMPLE )
+    - [Acelerômetro (`LSM9DS1`)](https://github.com/lucianobajr/internet-of-things/tree/main/tiny-machine-learning/sensors/accelerometer-sensor)
+    - [Cor (`APS-9960`)](https://github.com/lucianobajr/internet-of-things/tree/main/tiny-machine-learning/sensors/color-sensor)
+    - [Giroscópio (`LSM9DS1`)](https://github.com/lucianobajr/internet-of-things/tree/main/tiny-machine-learning/sensors/gyroscope-sensor)
+    - [Magnetômetro (`LSM9DS1`)](https://github.com/lucianobajr/internet-of-things/tree/main/tiny-machine-learning/sensors/magnetometer-sensor)
+    - [Microfone (`PDM`)](https://github.com/lucianobajr/internet-of-things/tree/main/tiny-machine-learning/sensors/microfone-sensor)
+    - [Pressão (`APDS9960`)](https://github.com/lucianobajr/internet-of-things/tree/main/tiny-machine-learning/sensors/pressure-senor)
+    - [Proximidade (`APDS9960`)](https://github.com/lucianobajr/internet-of-things/tree/main/tiny-machine-learning/sensors/proximity-sensor)
+
+
+## Práticas Arduino
+
+- [Prática (1): AWS IOT com MQTT (*Message Queuing Telemetry Transport*)](https://github.com/lucianobajr/internet-of-things/tree/main/ESP32/aws-iot)
+- [Prática (2): BLE com Firebase](https://github.com/lucianobajr/internet-of-things/tree/main/ESP32/ble-firebase)
+- [Prática (3): Firebase](https://github.com/lucianobajr/internet-of-things/tree/main/ESP32/firebase)
+- [Prática (4): Controle de LED](https://github.com/lucianobajr/internet-of-things/tree/main/ESP32/led-control)
