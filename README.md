@@ -165,7 +165,7 @@ O ESP32 é um pequeno microcontrolador desenvolvido com a capacidade de proporci
 
 ## [Motion Detection](https://github.com/lucianobajr/internet-of-things/tree/main/projects/motion)
 
-![01-intro - APP](https://user-images.githubusercontent.com/45442173/206337055-33d785a3-3e1e-4eea-b95c-5378835454fb.png)
+![01-intro](https://user-images.githubusercontent.com/45442173/206337295-52c9d3b6-eb60-40f7-ba1f-ec6844529b0e.png)
 
 
 <h1 align="center">
