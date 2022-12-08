@@ -14,6 +14,16 @@
 
 # Microcontroladores
 
+Um microcontrolador é um circuito integrado compacto projetado para controlar uma operação específica em um sistema embarcado. Um microcontrolador típico inclui um processador, memória e periféricos de entrada/saída (E/S) em um único chip.
+
+Às vezes chamados de controlador embarcado ou unidade de microcontrolador (MCU), os microcontroladores são encontrados em veículos, robôs, máquinas de escritório, dispositivos médicos, transceptores de rádio móveis, máquinas de venda automática e eletrodomésticos, entre outros dispositivos. Eles são essencialmente computadores pessoais (PCs) em miniatura simples projetados para controlar pequenos recursos de um componente maior, sem um sistema operacional (SO) front-end complexo.
+
+Um microcontrolador é incorporado dentro de um sistema para controlar uma função singular em um dispositivo. Ele faz isso interpretando os dados que recebe de seus periféricos de E/S usando seu processador central. As informações temporárias que o microcontrolador recebe são armazenadas em sua memória de dados, onde o processador as acessa e usa instruções armazenadas em sua memória de programa para decifrar e aplicar os dados recebidos. Em seguida, ele usa seus periféricos de E/S para se comunicar e executar a ação apropriada.
+
+Os microcontroladores são usados em uma ampla gama de sistemas e dispositivos. Os dispositivos geralmente utilizam vários microcontroladores que trabalham juntos dentro do dispositivo para lidar com suas respectivas tarefas.
+
+Por exemplo, um carro pode ter muitos microcontroladores que controlam vários sistemas individuais, como o sistema de freio antitravamento, controle de tração, injeção de combustível ou controle de suspensão. Todos os microcontroladores se comunicam entre si para informar as ações corretas. Alguns podem se comunicar com um computador central mais complexo dentro do carro, e outros podem se comunicar apenas com outros microcontroladores. Eles enviam e recebem dados usando seus periféricos de E/S e processam esses dados para executar suas tarefas designadas.
+
 ## MSP430
 
 Os MSP430 são microcontroladores RISC de 16 bits voltados para aplicações de baixo consumo de energia. São fabricados pela Texas Instruments e estão disponíveis em quatro famílias básicas: 1xx - voltados para aplicações gerais (1 a 60kb de memória flash e 128 a 10240 bytes de memória RAM)
