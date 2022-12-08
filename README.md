@@ -175,9 +175,8 @@ Este projeto teve como foco a fiscalização de containers de carga, sendo poss�
 | MARITIME    | `AZUL`     |
 
 <h1 align="center">
-    <img alt="" src="https://user-images.githubusercontent.com/45442173/206481437-1f03670d-e3d1-432d-a6ac-624e3e1e9712.jpeg" />
+    <img alt="" src="https://user-images.githubusercontent.com/45442173/206489631-b9b302a4-cbe9-407d-aa38-65be1f17a45b.jpeg" />
 </h1>
-
 
 De forma geral, o projeto envolve dois microcontroladores o `ESP32` e o `Arduino nano 33 BLE`. Com o `Arduino nano 33 BLE` foi treinado um modelo de Machine Learning, utilizando o sensor de acelerômetro (`LSM9DS1`) com auxílio da plataforma [Edge Impulse](https://www.edgeimpulse.com/). Com o `ESP32` recebemos o status do container via `Protocolo Bluetooth` vindo do `Arduino nano 33 BLE` e em seguida os dados são enviados para um banco de dados `Realtime` do `Firebase`. Por fim, foi desenvolvido um aplicativo mobile com `React Native` com intuito de fiscalizar/inspecionar todos os containers que contenham o kit  com dois microcontroladores do projeto.
 
@@ -185,8 +184,7 @@ Sendo assim, o fluxo `E2E`, ficou da seguinte forma:
 
 ![01-intro](https://user-images.githubusercontent.com/45442173/206337295-52c9d3b6-eb60-40f7-ba1f-ec6844529b0e.png)
 
-
-
+O projeto se encontra público pela próprio [Edge Impulse](https://studio.edgeimpulse.com/public/150502/latest) sendo possível ver todo fluxo dês da extração dos dados até o deploy para o `Arduino nano 33 BLE`.
 
 <h1 align="center">
     <img alt="" src="https://user-images.githubusercontent.com/45442173/206332256-a84d7465-7167-4e16-a14e-06e2b05f681e.png" />
