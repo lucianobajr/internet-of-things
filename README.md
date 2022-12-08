@@ -1,16 +1,16 @@
 # IOT (internet of things)
 
 - [Microcontroladores](#microcontroladores)
-    - [MSP430](#msp430)
-    - [Arduino Tiny Machine Learning Kit](#arduino-tiny-machine-learning-kit)
-    - [ESP32](#esp32)
+  - [MSP430](#msp430)
+  - [Arduino Tiny Machine Learning Kit](#arduino-tiny-machine-learning-kit)
+  - [ESP32](#esp32)
 - [Práticas](#práticas)
-    - [Práticas MSP](#práticas-msp)
-    - [Práticas ESP](#práticas-esp)
-    - [Práticas Arduino](#práticas-arduino)
+  - [Práticas MSP](#práticas-msp)
+  - [Práticas ESP](#práticas-esp)
+  - [Práticas Arduino](#práticas-arduino)
 - [Projetos](#projetos)
-    - [Motion Detection](#motion-detection)
-    - [My Replenisher](#my-replenisher)
+  - [Motion Detection](#motion-detection)
+  - [My Replenisher](#my-replenisher)
 
 # Microcontroladores
 
@@ -36,7 +36,7 @@ Os MSP430 são microcontroladores RISC de 16 bits voltados para aplicações de 
 - Módulos ADC e comparadores
 - UART, SPI, I2C
 
-### Instalação Compilador MSP430 
+### Instalação Compilador MSP430
 
     $ sudo apt-get install msp430-libc mspdebug msp430mcu binutils-msp430 gcc-msp430 gdb-msp430
 
@@ -50,22 +50,26 @@ Os MSP430 são microcontroladores RISC de 16 bits voltados para aplicações de 
     $ msp430-gcc -Os -mmcu=msp430g2553 test.c -o test.elf
 
 ### Agora conecte a Launchpad na USB da sua máquina
+
     $ dmesg
 
 ### Para gravar na Launchpad basta chamar a ferramenta mspdebug
+
     $ sudo mspdebug rf2500
 
 ### Primeiro programe o arquivo elf gerado:
+
     $ prog blink.elf
 
 ### Execute a aplicação
+
     $ run
 
 ## Arduino Tiny Machine Learning Kit
 
 O Tiny Machine Learning Kit, combinado com os emocionantes cursos TinyML Applications e Deploying TinyML on Microcontrollers, que fazem parte da especialização Tiny Machine Learning (TinyML) da EdX, fornecerão todas as ferramentas necessárias para dar vida às suas visões de ML!
 
-O kit é composto por uma poderosa placa equipada com um microcontrolador e uma ampla variedade de sensores (Arduino Nano 33 BLE Sense*). A placa pode detectar movimento, aceleração, rotação, temperatura, umidade, pressão barométrica, sons, gestos, proximidade, cor e intensidade da luz. O kit também inclui um módulo de câmera (OV7675) e um escudo Arduino personalizado para facilitar a conexão de seus componentes e criar seu próprio projeto TinyML exclusivo. Você poderá explorar casos de uso práticos de ML usando algoritmos clássicos e redes neurais profundas desenvolvidas pelo TensorFlow Lite Micro. As possibilidades são limitadas apenas por sua imaginação!
+O kit é composto por uma poderosa placa equipada com um microcontrolador e uma ampla variedade de sensores (Arduino Nano 33 BLE Sense\*). A placa pode detectar movimento, aceleração, rotação, temperatura, umidade, pressão barométrica, sons, gestos, proximidade, cor e intensidade da luz. O kit também inclui um módulo de câmera (OV7675) e um escudo Arduino personalizado para facilitar a conexão de seus componentes e criar seu próprio projeto TinyML exclusivo. Você poderá explorar casos de uso práticos de ML usando algoritmos clássicos e redes neurais profundas desenvolvidas pelo TensorFlow Lite Micro. As possibilidades são limitadas apenas por sua imaginação!
 
 <h1 align="center">
     <img alt="" src="https://user-images.githubusercontent.com/45442173/195163535-c851c183-80a6-4f4b-972f-614b276b511a.png" width="400px"/>
@@ -90,22 +94,20 @@ O kit é composto por uma poderosa placa equipada com um microcontrolador e uma 
 - Permite que você leia os valores do acelerômetro, magnetômetro e giroscópio da IMU `LSM9DS1` em seu Arduino Nano 33 BLE Sense.
 - Uso de microfones `PDM` para o Arduino Zero / Adafruit Feather M0 (processador SAMD21).
 
-
 ## ESP32
 
 <h1 align="center">
     <img alt="" src="https://user-images.githubusercontent.com/45442173/206322490-fc91a43e-a3d7-4584-99d3-255732715754.png" width="400px"/>
 </h1>
 
-
 O ESP32 é um pequeno microcontrolador desenvolvido com a capacidade de proporcionar comunicação sem fio através do Wifi e através do próprio sistema Bluetooth. Ele pode funcionar como um sistema autônomo completo ou como um dispositivo escravo para um MCU host, reduzindo a sobrecarga da pilha de comunicação no processador principal do aplicativo. O ESP32 pode interagir com outros sistemas para fornecer funcionalidade Wi-Fi e Bluetooth por meio de suas interfaces SPI/SDIO ou I2C/UART.
 
 ### Especificação
+
 - Protocolo WI-FI: 802.11 b/g/n (802.11n, até 150 mbps);
 - Faixa de frequência 2.4 - 2.5 GHz;
 - Protocolo Bluetooth: compatível com os padrões de bluetooth v4.2 br/edr e ble;
 - Tensão de entrada: 3 - 3,6 V;
-
 
 ### Firebase - ESP32
 
@@ -114,7 +116,6 @@ O ESP32 é um pequeno microcontrolador desenvolvido com a capacidade de proporci
 ### Firebase - ESP32
 
 - [AZURE IOT](https://internet-of-things.azureiotcentral.com/devices)
-
 
 ### AWS IOT - ESP32
 
@@ -136,27 +137,26 @@ O ESP32 é um pequeno microcontrolador desenvolvido com a capacidade de proporci
 ## Práticas ESP
 
 - BLE
-    - [Periférico](https://github.com/lucianobajr/internet-of-things/tree/main/tiny-machine-learning/ble-examples/ble-peripheral)
-    - [Envio de dados](https://github.com/lucianobajr/internet-of-things/tree/main/tiny-machine-learning/ble-examples/ble-send-data)
-    - [Com uso de sensores](https://github.com/lucianobajr/internet-of-things/tree/main/tiny-machine-learning/ble-examples/ble-sensor-environment)
+  - [Periférico](https://github.com/lucianobajr/internet-of-things/tree/main/tiny-machine-learning/ble-examples/ble-peripheral)
+  - [Envio de dados](https://github.com/lucianobajr/internet-of-things/tree/main/tiny-machine-learning/ble-examples/ble-send-data)
+  - [Com uso de sensores](https://github.com/lucianobajr/internet-of-things/tree/main/tiny-machine-learning/ble-examples/ble-sensor-environment)
 - Machine Learning
-    - [Detecção de movimento de container](https://github.com/lucianobajr/internet-of-things/tree/main/tiny-machine-learning/machine-learning/motion-detection)
-    - [Detecção de pessoas](https://github.com/lucianobajr/internet-of-things/tree/main/tiny-machine-learning/machine-learning/person-detection)
-    - [Detecção de `Yes` ou `No`](https://github.com/lucianobajr/internet-of-things/tree/main/tiny-machine-learning/machine-learning/yes-no-speech-detection)
+  - [Detecção de movimento de container](https://github.com/lucianobajr/internet-of-things/tree/main/tiny-machine-learning/machine-learning/motion-detection)
+  - [Detecção de pessoas](https://github.com/lucianobajr/internet-of-things/tree/main/tiny-machine-learning/machine-learning/person-detection)
+  - [Detecção de `Yes` ou `No`](https://github.com/lucianobajr/internet-of-things/tree/main/tiny-machine-learning/machine-learning/yes-no-speech-detection)
 - Sensores
-    - [Gestos e de Cor (`APS-9960`)](https://github.com/lucianobajr/internet-of-things/tree/main/tiny-machine-learning/sensors/APS-9960-FULL-EXAMPLE )
-    - [Acelerômetro (`LSM9DS1`)](https://github.com/lucianobajr/internet-of-things/tree/main/tiny-machine-learning/sensors/accelerometer-sensor)
-    - [Cor (`APS-9960`)](https://github.com/lucianobajr/internet-of-things/tree/main/tiny-machine-learning/sensors/color-sensor)
-    - [Giroscópio (`LSM9DS1`)](https://github.com/lucianobajr/internet-of-things/tree/main/tiny-machine-learning/sensors/gyroscope-sensor)
-    - [Magnetômetro (`LSM9DS1`)](https://github.com/lucianobajr/internet-of-things/tree/main/tiny-machine-learning/sensors/magnetometer-sensor)
-    - [Microfone (`PDM`)](https://github.com/lucianobajr/internet-of-things/tree/main/tiny-machine-learning/sensors/microfone-sensor)
-    - [Pressão (`APDS9960`)](https://github.com/lucianobajr/internet-of-things/tree/main/tiny-machine-learning/sensors/pressure-senor)
-    - [Proximidade (`APDS9960`)](https://github.com/lucianobajr/internet-of-things/tree/main/tiny-machine-learning/sensors/proximity-sensor)
-
+  - [Gestos e de Cor (`APS-9960`)](https://github.com/lucianobajr/internet-of-things/tree/main/tiny-machine-learning/sensors/APS-9960-FULL-EXAMPLE)
+  - [Acelerômetro (`LSM9DS1`)](https://github.com/lucianobajr/internet-of-things/tree/main/tiny-machine-learning/sensors/accelerometer-sensor)
+  - [Cor (`APS-9960`)](https://github.com/lucianobajr/internet-of-things/tree/main/tiny-machine-learning/sensors/color-sensor)
+  - [Giroscópio (`LSM9DS1`)](https://github.com/lucianobajr/internet-of-things/tree/main/tiny-machine-learning/sensors/gyroscope-sensor)
+  - [Magnetômetro (`LSM9DS1`)](https://github.com/lucianobajr/internet-of-things/tree/main/tiny-machine-learning/sensors/magnetometer-sensor)
+  - [Microfone (`PDM`)](https://github.com/lucianobajr/internet-of-things/tree/main/tiny-machine-learning/sensors/microfone-sensor)
+  - [Pressão (`APDS9960`)](https://github.com/lucianobajr/internet-of-things/tree/main/tiny-machine-learning/sensors/pressure-senor)
+  - [Proximidade (`APDS9960`)](https://github.com/lucianobajr/internet-of-things/tree/main/tiny-machine-learning/sensors/proximity-sensor)
 
 ## Práticas Arduino
 
-- [Prática (1): AWS IOT com MQTT (*Message Queuing Telemetry Transport*)](https://github.com/lucianobajr/internet-of-things/tree/main/ESP32/aws-iot)
+- [Prática (1): AWS IOT com MQTT (_Message Queuing Telemetry Transport_)](https://github.com/lucianobajr/internet-of-things/tree/main/ESP32/aws-iot)
 - [Prática (2): BLE com Firebase](https://github.com/lucianobajr/internet-of-things/tree/main/ESP32/ble-firebase)
 - [Prática (3): Firebase](https://github.com/lucianobajr/internet-of-things/tree/main/ESP32/firebase)
 - [Prática (4): Controle de LED](https://github.com/lucianobajr/internet-of-things/tree/main/ESP32/led-control)
@@ -169,8 +169,32 @@ O ESP32 é um pequeno microcontrolador desenvolvido com a capacidade de proporci
     <img alt="" src="https://user-images.githubusercontent.com/45442173/206332256-a84d7465-7167-4e16-a14e-06e2b05f681e.png" />
 </h1>
 
+| LABEL       | LED        |
+| ----------- | ---------- |
+| IDLE        | -          |
+| LIFT        | `VERDE`    |
+| TERRESTRIAL | `VERMELHO` |
+| MARITIME    | `AZUL`     |
+
 ## [My Replenisher](https://github.com/lucianobajr/internet-of-things/tree/main/projects/my-replenisher)
 
 <h1 align="center">
     <img alt="" src="https://user-images.githubusercontent.com/45442173/206332258-6ebd9459-7d42-4d63-b3ba-493abf7f19ec.png" />
 </h1>
+
+| LABEL'S                   |
+| ------------------------- |
+| ALL                       |
+| MISSING_RICE              |
+| MISSING COFFEE            |
+| MISSING SUGAR             |
+| MISSING_BEAN              |
+| MISSING RICE COFFEE       |
+| MISSING RICE SUGAR        |
+| MISSING BEAN COFFEE       |
+| MISSING BEAN SUGAR        |
+| MISSING COFFEE SUGAR      |
+| MISSING RICE BEAN COFFEE  |
+| MISSING RICE BEAN SUGAR   |
+| MISSING BEAN COFFEE SUGAR |
+| NONE                      |
