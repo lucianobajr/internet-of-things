@@ -1,5 +1,9 @@
 # IOT (internet of things)
 
+- [MSP430](#msp430)
+- [Arduino Tiny Machine Learning Kit](#arduino-tiny-machine-learning-kit)
+- [ESP32](#esp32)
+
 ## MSP430
 
 Os MSP430 são microcontroladores RISC de 16 bits voltados para aplicações de baixo consumo de energia. São fabricados pela Texas Instruments e estão disponíveis em quatro famílias básicas: 1xx - voltados para aplicações gerais (1 a 60kb de memória flash e 128 a 10240 bytes de memória RAM)
