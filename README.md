@@ -185,10 +185,10 @@ O ESP32 é um pequeno microcontrolador desenvolvido com a capacidade de proporci
 | LABEL'S                   |
 | ------------------------- |
 | ALL                       |
-| MISSING_RICE              |
+| MISSING RICE              |
 | MISSING COFFEE            |
 | MISSING SUGAR             |
-| MISSING_BEAN              |
+| MISSING BEAN              |
 | MISSING RICE COFFEE       |
 | MISSING RICE SUGAR        |
 | MISSING BEAN COFFEE       |
