@@ -18,12 +18,6 @@ Um microcontrolador é um circuito integrado compacto projetado para controlar u
 
 Às vezes chamados de controlador embarcado ou unidade de microcontrolador (MCU), os microcontroladores são encontrados em veículos, robôs, máquinas de escritório, dispositivos médicos, transceptores de rádio móveis, máquinas de venda automática e eletrodomésticos, entre outros dispositivos. Eles são essencialmente computadores pessoais (PCs) em miniatura simples projetados para controlar pequenos recursos de um componente maior, sem um sistema operacional (SO) front-end complexo.
 
-Um microcontrolador é incorporado dentro de um sistema para controlar uma função singular em um dispositivo. Ele faz isso interpretando os dados que recebe de seus periféricos de E/S usando seu processador central. As informações temporárias que o microcontrolador recebe são armazenadas em sua memória de dados, onde o processador as acessa e usa instruções armazenadas em sua memória de programa para decifrar e aplicar os dados recebidos. Em seguida, ele usa seus periféricos de E/S para se comunicar e executar a ação apropriada.
-
-Os microcontroladores são usados em uma ampla gama de sistemas e dispositivos. Os dispositivos geralmente utilizam vários microcontroladores que trabalham juntos dentro do dispositivo para lidar com suas respectivas tarefas.
-
-Por exemplo, um carro pode ter muitos microcontroladores que controlam vários sistemas individuais, como o sistema de freio antitravamento, controle de tração, injeção de combustível ou controle de suspensão. Todos os microcontroladores se comunicam entre si para informar as ações corretas. Alguns podem se comunicar com um computador central mais complexo dentro do carro, e outros podem se comunicar apenas com outros microcontroladores. Eles enviam e recebem dados usando seus periféricos de E/S e processam esses dados para executar suas tarefas designadas.
-
 ## MSP430
 
 Os MSP430 são microcontroladores RISC de 16 bits voltados para aplicações de baixo consumo de energia. São fabricados pela Texas Instruments e estão disponíveis em quatro famílias básicas: 1xx - voltados para aplicações gerais (1 a 60kb de memória flash e 128 a 10240 bytes de memória RAM)
@@ -32,7 +26,7 @@ Os MSP430 são microcontroladores RISC de 16 bits voltados para aplicações de 
     <img alt="" src="https://user-images.githubusercontent.com/45442173/194091347-d173c958-dc73-4803-93d3-4e10e9e5b5d0.png" width="400px"/>
 </h1>
 
-### Características
+### Especificação
 
 - Arquitetura Von Neumann, RISC
 - 16 KB de memória Flash
@@ -105,6 +99,12 @@ O kit é composto por uma poderosa placa equipada com um microcontrolador e uma 
 
 
 O ESP32 é um pequeno microcontrolador desenvolvido com a capacidade de proporcionar comunicação sem fio através do Wifi e através do próprio sistema Bluetooth. Ele pode funcionar como um sistema autônomo completo ou como um dispositivo escravo para um MCU host, reduzindo a sobrecarga da pilha de comunicação no processador principal do aplicativo. O ESP32 pode interagir com outros sistemas para fornecer funcionalidade Wi-Fi e Bluetooth por meio de suas interfaces SPI/SDIO ou I2C/UART.
+
+### Especificação
+- Protocolo WI-FI: 802.11 b/g/n (802.11n, até 150 mbps);
+- Faixa de frequência 2.4 - 2.5 GHz;
+- Protocolo Bluetooth: compatível com os padrões de bluetooth v4.2 br/edr e ble;
+- Tensão de entrada: 3 - 3,6 V;
 
 
 ### Firebase - ESP32
