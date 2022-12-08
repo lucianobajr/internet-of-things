@@ -1,6 +1,6 @@
 # IOT (internet of things)
 
-- [Microcontroloadores](#microcontroladores)
+- [Microcontroladores](#microcontroladores)
     - [MSP430](#msp430)
     - [Arduino Tiny Machine Learning Kit](#arduino-tiny-machine-learning-kit)
     - [ESP32](#esp32)
@@ -8,6 +8,11 @@
     - [Práticas MSP](#práticas-msp)
     - [Práticas ESP](#práticas-esp)
     - [Práticas Arduino](#práticas-arduino)
+- [Projetos](#projetos)
+    - [Motion Detection](#motion-detection)
+    - [My Replenisher](#my-replenisher)
+
+# Microcontroladores
 
 ## MSP430
 
@@ -108,6 +113,8 @@ O ESP32 é um pequeno microcontrolador desenvolvido com a capacidade de proporci
 - [AWS IOT MQTT com ReactJS](https://www.serverlessguru.com/blog/part-one-serverless-real-time-reactjs-app-aws-iot-mqtt)
 - [AWS IOT MQTT com React Native](https://roger-espinoza-996.medium.com/connection-mqtt-react-native-aws-iot-core-ac569eb606aa)
 
+# Práticas
+
 ## Práticas MSP
 
 - [Prática (1): Troca de leds por E/S => versão diferente de implementação (../examples/switch_leds.c)](https://github.com/lucianobajr/internet-of-things/blob/main/msp430-launchpad/practices/first.c)
@@ -143,3 +150,9 @@ O ESP32 é um pequeno microcontrolador desenvolvido com a capacidade de proporci
 - [Prática (2): BLE com Firebase](https://github.com/lucianobajr/internet-of-things/tree/main/ESP32/ble-firebase)
 - [Prática (3): Firebase](https://github.com/lucianobajr/internet-of-things/tree/main/ESP32/firebase)
 - [Prática (4): Controle de LED](https://github.com/lucianobajr/internet-of-things/tree/main/ESP32/led-control)
+
+# Projetos
+
+## Motion Detection
+
+## My Replenisher
