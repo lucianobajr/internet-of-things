@@ -176,7 +176,16 @@ O ESP32 é um pequeno microcontrolador desenvolvido com a capacidade de proporci
 | TERRESTRIAL | `VERMELHO` |
 | MARITIME    | `AZUL`     |
 
+<h1 align="center">App Mobile</h1>
+
+
+| Splash Screen | Login | Home | Info
+|-----------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------
+|<img src="https://user-images.githubusercontent.com/45442173/206336338-df605de4-b178-4086-aec4-d2485f77373a.png" /> | <img src="https://user-images.githubusercontent.com/45442173/206336345-d37802fb-3e95-4d7e-86e2-38c2f949df3d.png" /> | <img src="https://user-images.githubusercontent.com/45442173/206336350-747edab9-4734-461a-a4a2-a98924163705.png" /> | <img src="https://user-images.githubusercontent.com/45442173/206336357-6e7da258-f8f0-43e2-818f-d2243ad6aa3b.png"/>
+
 ## [My Replenisher](https://github.com/lucianobajr/internet-of-things/tree/main/projects/my-replenisher)
+
+![01-intro (1)](https://user-images.githubusercontent.com/45442173/202305389-16fdfafa-19b2-4a92-84ce-a70a74e3274a.png)
 
 <h1 align="center">
     <img alt="" src="https://user-images.githubusercontent.com/45442173/206332258-6ebd9459-7d42-4d63-b3ba-493abf7f19ec.png" />
@@ -200,7 +209,7 @@ O ESP32 é um pequeno microcontrolador desenvolvido com a capacidade de proporci
 | NONE                      |
 
 
-<h1 align="center">Screenshots</h1>
+<h1 align="center">App Mobile</h1>
 
 
 | Splash Screen | Onboarding | Login | SignUp
