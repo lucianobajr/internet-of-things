@@ -230,7 +230,7 @@ Uma das grandes vantagens de usar o Upstash sobre outros serviços é o preço p
 ### Railway
 A Railway é uma plataforma de implantação na qual você pode provisionar a infraestrutura, desenvolver com essa infraestrutura localmente e, em seguida, implantar na nuvem. Este serviço foi utilizado para implantação do backend da aplicação voltado para autenticação dos usuários
 
-
+### Edge Impulse
 
 O projeto se encontra público pela próprio [Edge Impulse](https://studio.edgeimpulse.com/public/165169/latest) sendo possível ver todo fluxo dês da extração dos dados até o deploy para o `Arduino nano 33 BLE`.
 
