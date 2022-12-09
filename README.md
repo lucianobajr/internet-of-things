@@ -238,6 +238,7 @@ O projeto se encontra público pela próprio [Edge Impulse](https://studio.edgei
     <img alt="" src="https://user-images.githubusercontent.com/45442173/206332258-6ebd9459-7d42-4d63-b3ba-493abf7f19ec.png" />
 </h1>
 
+
 | LABEL'S                   |
 | ------------------------- |
 | ALL                       |
@@ -254,6 +255,9 @@ O projeto se encontra público pela próprio [Edge Impulse](https://studio.edgei
 | MISSING RICE BEAN SUGAR   |
 | MISSING BEAN COFFEE SUGAR |
 | NONE                      |
+
+
+![01-intro](https://user-images.githubusercontent.com/45442173/206812150-a8a50ae4-2819-40db-a064-29247685ea08.png)
 
 
 <h1 align="center">App Mobile</h1>
