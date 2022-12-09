@@ -134,7 +134,7 @@ O ESP32 é um pequeno microcontrolador desenvolvido com a capacidade de proporci
 - [Prática (4): Conversor Analógico Digital](https://github.com/lucianobajr/internet-of-things/blob/main/msp430-launchpad/practices/fourth.c)
 - [Prática (5): Comunicação Serial com Teclado](https://github.com/lucianobajr/internet-of-things/blob/main/msp430-launchpad/practices/serial_comunnication.c) ([art-communication](https://www.xanthium.in/Serial-Communication-MSP430-UART-USCI_A))
 
-## Práticas ESP
+## Práticas Arduino
 
 - BLE
   - [Periférico](https://github.com/lucianobajr/internet-of-things/tree/main/tiny-machine-learning/ble-examples/ble-peripheral)
@@ -154,7 +154,7 @@ O ESP32 é um pequeno microcontrolador desenvolvido com a capacidade de proporci
   - [Pressão (`APDS9960`)](https://github.com/lucianobajr/internet-of-things/tree/main/tiny-machine-learning/sensors/pressure-senor)
   - [Proximidade (`APDS9960`)](https://github.com/lucianobajr/internet-of-things/tree/main/tiny-machine-learning/sensors/proximity-sensor)
 
-## Práticas Arduino
+## Práticas ESP
 
 - [Prática (1): AWS IOT com MQTT (_Message Queuing Telemetry Transport_)](https://github.com/lucianobajr/internet-of-things/tree/main/ESP32/aws-iot)
 - [Prática (2): BLE com Firebase](https://github.com/lucianobajr/internet-of-things/tree/main/ESP32/ble-firebase)
@@ -193,14 +193,21 @@ O projeto se encontra público pela próprio [Edge Impulse](https://studio.edgei
 
 <h1 align="center">App Mobile</h1>
 
-
 | Splash Screen | Login | Home | Info
 |-----------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------
 |<img src="https://user-images.githubusercontent.com/45442173/206336338-df605de4-b178-4086-aec4-d2485f77373a.png" /> | <img src="https://user-images.githubusercontent.com/45442173/206336345-d37802fb-3e95-4d7e-86e2-38c2f949df3d.png" /> | <img src="https://user-images.githubusercontent.com/45442173/206336350-747edab9-4734-461a-a4a2-a98924163705.png" /> | <img src="https://user-images.githubusercontent.com/45442173/206336357-6e7da258-f8f0-43e2-818f-d2243ad6aa3b.png"/>
 
 ## [My Replenisher](https://github.com/lucianobajr/internet-of-things/tree/main/projects/my-replenisher)
 
-O My Replenisher
+O My Replenisher é um projeto com foco em informar ao usuário quando os alimentos essenciais de sua casa estão em falta, sendo eles: `arroz`, `feijão`,`açucar` e `café`.
+
+De forma geral, o projeto envolve dois microcontroladores o `ESP32` e o `Arduino nano 33 BLE`. Com o `Arduino nano 33 BLE` foi treinado um modelo de Machine Learning, utilizando a câmera do kit (`OV7675`) com auxílio da plataforma [Edge Impulse](https://www.edgeimpulse.com/), sendo que foi criada uma base com mais de 200 imagens capturadas. Com o `ESP32` recebemos o status dos alimentos via `Protocolo Bluetooth` vindo do `Arduino nano 33 BLE` e em seguida os dados são enviados para um `worker` da `clouflare` utilizando edge computing e o `serverless database upstash` . Por fim, foi desenvolvido um aplicativo mobile com `React Native` que utiliza de uma api feita em `express` com `typescript`,`prisma`, `jwt`, dentre outras tecnologias
+com foco na autenticação do usuário para isso, a `api` foi hospedada na plataforma `railway` utilizando um banco de dados relacional `postgreSQL`. Além disso, o app faz uso do `realtime database`.
+O objetivo da aplicação mobile vai além de oferecer ao usuário a fiscalização dos alimentos essenciais. É possível criar com o app listas de compras em tempo real (compartilhadas entre vários usuários), sendo que sempre no topo da lista de forma obrigatória para criação teremos os alimentos essenciais que estão em falta, capturados utilizando as etapas explicadas.
+
+Sendo assim, o fluxo E2E, ficou da seguinte forma:
+
+![01-intro (1)](https://user-images.githubusercontent.com/45442173/202305389-16fdfafa-19b2-4a92-84ce-a70a74e3274a.png)
 
 ### CloudFlare Workers
 
@@ -208,7 +215,9 @@ A Cloudflare oferece serviços de computação sem servidor por meio do Cloudfla
 
 A edge computing, ou computação de borda, é aquela na qual o processamento acontece no local físico (ou próximo) do usuário ou da fonte de dados. Com o processamento mais próximo, os usuários se beneficiam de serviços mais rápidos e confiáveis, enquanto as empresas usufruem da flexibilidade da cloud computing híbrida. A edge computing é uma das formas como uma empresa pode usar e distribuir um pool de recursos por um grande número de locais.
 
-### Upstash é um banco de dados em nuvem na memória sem servidor da Upstash Inc, uma empresa com sede na Califórnia.
+### Upstash
+
+É um banco de dados em nuvem na memória sem servidor da Upstash Inc, uma empresa com sede na Califórnia.
 
 É um serviço Redis sem servidor. Ele pode ser usado para camada de cache ou como um banco de dados. O legal é que você não precisa gerenciar nenhum servidor de banco de dados ou clusters. É totalmente sem servidor. Você usa e paga apenas o que usar.
 
@@ -219,7 +228,6 @@ Uma das grandes vantagens de usar o Upstash sobre outros serviços é o preço p
 ### Railway
 A Railway é uma plataforma de implantação na qual você pode provisionar a infraestrutura, desenvolver com essa infraestrutura localmente e, em seguida, implantar na nuvem. Este serviço foi utilizado para implantação do backend da aplicação voltado para autenticação dos usuários
 
-![01-intro (1)](https://user-images.githubusercontent.com/45442173/202305389-16fdfafa-19b2-4a92-84ce-a70a74e3274a.png)
 
 <h1 align="center">
     <img alt="" src="https://user-images.githubusercontent.com/45442173/206332258-6ebd9459-7d42-4d63-b3ba-493abf7f19ec.png" />
