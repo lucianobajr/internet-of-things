@@ -271,3 +271,7 @@ O projeto se encontra público pela próprio [Edge Impulse](https://studio.edgei
 | Home | Listas | Criar Lista | Perfil
 |-----------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------
 |<img src="https://user-images.githubusercontent.com/45442173/206334844-8b333ba6-5128-479e-b6e6-b96119ff1488.png" /> | <img src="https://user-images.githubusercontent.com/45442173/206334898-bbb4af42-dd04-4fb1-bfc9-5815d6b60e74.png" /> | <img src="https://user-images.githubusercontent.com/45442173/206334906-a134ae76-81f1-403c-96f1-042d8fe0fb70.png" /> | <img src="https://user-images.githubusercontent.com/45442173/206334915-1d9d8e38-2cf1-4654-ba33-56b4c08422ce.png"/>
+
+# :memo: License
+
+This project is under the MIT license. See the [LICENSE](https://github.com/lucianobajr/internet-of-things/blob/main/LICENSE) for more information.
