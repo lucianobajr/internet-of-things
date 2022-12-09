@@ -200,6 +200,25 @@ O projeto se encontra público pela próprio [Edge Impulse](https://studio.edgei
 
 ## [My Replenisher](https://github.com/lucianobajr/internet-of-things/tree/main/projects/my-replenisher)
 
+O My Replenisher
+
+### CloudFlare Workers
+
+A Cloudflare oferece serviços de computação sem servidor por meio do Cloudflare Workers, uma plataforma para a criação e implantação de funções JavaScript que são executadas na rede de borda da Cloudflare. A execução do código na borda, o mais próximo possível do usuário final, ajuda a reduzir a latência e aumentar o desempenho do aplicativo. Cada "Worker' pode modificar e responder às solicitações HTTP.
+
+A edge computing, ou computação de borda, é aquela na qual o processamento acontece no local físico (ou próximo) do usuário ou da fonte de dados. Com o processamento mais próximo, os usuários se beneficiam de serviços mais rápidos e confiáveis, enquanto as empresas usufruem da flexibilidade da cloud computing híbrida. A edge computing é uma das formas como uma empresa pode usar e distribuir um pool de recursos por um grande número de locais.
+
+### Upstash é um banco de dados em nuvem na memória sem servidor da Upstash Inc, uma empresa com sede na Califórnia.
+
+É um serviço Redis sem servidor. Ele pode ser usado para camada de cache ou como um banco de dados. O legal é que você não precisa gerenciar nenhum servidor de banco de dados ou clusters. É totalmente sem servidor. Você usa e paga apenas o que usar.
+
+Problemas modernos exigem soluções modernas, é exatamente isso que tecnologias Serverless como Upstash fazem.
+
+Uma das grandes vantagens de usar o Upstash sobre outros serviços é o preço por solicitação, você não paga nada com o Upstash se não estiver usando.
+
+### Railway
+A Railway é uma plataforma de implantação na qual você pode provisionar a infraestrutura, desenvolver com essa infraestrutura localmente e, em seguida, implantar na nuvem. Este serviço foi utilizado para implantação do backend da aplicação voltado para autenticação dos usuários
+
 ![01-intro (1)](https://user-images.githubusercontent.com/45442173/202305389-16fdfafa-19b2-4a92-84ce-a70a74e3274a.png)
 
 <h1 align="center">
